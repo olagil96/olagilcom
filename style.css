@@ -1,0 +1,1050 @@
+*{
+  margin:0;
+  padding:0;
+}
+[class*=col] {
+  padding:0;
+}
+:root{
+  --color-green:#18201a;
+  --color-darkgrey:rgb(70,70,70);
+  --color-lightgreen:#696e5b;
+}
+/* darkgreen:rgba(24, 32, 26,0.97);
+ */
+
+body{
+  font-family:'Europa';
+  color:var(--color-darkgrey)
+}
+
+
+header{
+
+}
+header a {
+  display:inline-block;
+  color:inherit;
+  text-decoration:none;
+}
+main{
+  color:white;
+  background-color: rgb(240,240,240);
+}
+
+h1{
+  font-size:3rem;
+  font-weight: 600;
+  padding-bottom:1rem;
+}
+h2{
+  padding-bottom:5rem;
+  font-weight:200;
+  line-height: 2.5rem;
+}
+
+h1,h2{
+  text-align:center;
+}
+h3{
+  color:var(--color-darkgrey);
+  font-size:4rem;
+  text-align:center;
+  padding-bottom:3rem;
+}
+
+a{
+  color:inherit;
+}
+p{
+  color:var(--color-darkgrey);
+  font-weight:300;
+  font-size:1.5rem;
+  padding-top:0%;
+  padding-bottom:10%;
+  text-align:center;
+}
+p::selection{
+  background-color: rgba(105, 110, 91, 0.4);
+}
+h1::selection{
+  background-color: rgba(105, 110, 91, 0.4);
+}
+h2::selection{
+  background-color: rgba(105, 110, 91, 0.4);
+}
+h3::selection{
+  background-color: rgba(105, 110, 91, 0.4);
+}
+.description{
+  text-align:center;
+  font-weight:bolder;
+  padding-bottom:0%;
+}
+.bottom-description{
+  text-align:left;
+  padding-top:3%;
+}
+.sub-description{
+  text-align:center;
+  padding-top:3%;
+}
+.equipment{
+  font-style: italic;
+  padding-top:0;
+}
+.margin{
+  padding-bottom:10%;
+}
+
+footer{
+  background-color: var(--color-lightgreen);
+  padding:5%;
+}
+footer p{
+  color:white;
+  text-align:center;
+  font-size:1rem;
+  padding:1%;
+}
+/* header classes */
+.page-header{
+  display:flex;
+  align-items:center;
+  padding:2%;
+  font-size:1.5rem;
+  height:50px;
+  position:fixed;
+  width:96%;
+  z-index: 999;
+  background-color: white;
+  transition: all 300ms ease-in-out;
+}
+.page-header div{
+  flex:1;
+}
+.page-header ul{
+  list-style: none;
+  display:flex;
+}
+
+.logo{
+  text-align:center;
+}
+.social{
+  justify-content:flex-end;
+}
+.small{
+  height:8px;
+}
+.small ul{
+  visibility:hidden;
+}
+.small a{
+  font-size:1.2rem;
+}
+
+/* section main*/
+
+
+
+/* section main 2 */
+.work{
+  padding:4rem;
+  text-align:center;
+}
+
+.work div{
+  padding:20px;
+}
+.section-main{
+  display:flex;
+  flex-direction: column;
+  margin:auto;
+  align-items:center;
+  height:60vh;
+  justify-content: center;
+}
+.section-contact{
+  height:5vh;
+}
+.see-section{
+  height:40vh;
+}
+
+.see-section a{
+  font-size:2rem;
+  display:flex;
+  margin:auto;
+  color:white;
+  text-decoration: none;
+  padding-top:10%;
+  justify-content: center;
+
+}
+.index-section{
+  min-height:84vh;
+
+}
+
+.see{
+  background-size: cover;
+  background-position: center;
+  height:50vh;
+}
+.see-design{
+  background-image: url(images/design/cat/game.jpg);
+}
+.see-photo{
+  background-image: url(images/photography/cat/kuba.jpg);
+}
+.button-contact{
+  display:flex;
+  justify-content: center;
+  align:center;
+  display:inline-block;
+  font:inherit;
+  font-size:1.3rem;
+  color: var(--color-lightgreen);
+  background-color: white;
+  border-radius: 40px;
+  text-decoration:none;
+  padding:1rem 2rem 1rem 2rem;
+}
+.button-contact:hover{
+  color:white;
+  background-color: var(--color-lightgreen);
+}
+.button{
+  display:inline-block;
+  color:var(--color-darkgrey);
+  font-size:1.7rem;
+  text-decoration: none;
+  padding:1rem;
+  border:1px solid var(--color-lightgreen);
+  border-radius: 20px;
+  margin-bottom:2rem;
+}
+.button:hover{
+  color:white;
+  background-color: var(--color-lightgreen);
+}
+.avatar{
+  background-color: var(--color-lightgreen);
+  background-image: url('images/avatar.jpg');
+  height:150px;
+  width:150px;
+  border-radius: 100%;
+  margin:1rem;
+  background-size: cover;
+  background-position: center;
+}
+
+/* SUBPAGE DESIGN */
+/* main */
+.design{
+  padding-top:100px;
+}
+.designPage{
+  padding:2rem;
+  padding-top:30px;
+  display:flex;
+  margin:auto;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.projectImage{
+  margin:0.7rem;
+}
+.designImage{
+  position:relative;
+  display:flex;
+  background-color: var(--color-green);
+  min-height: 450px;
+  min-width:600px;
+  background-position: center;
+  /* background-size: 120%; */
+  background-size:cover;
+  /* transition: 0.5s; */
+}
+.designImage:hover{
+  /* background-size: 130%; */
+}
+.designImage:after{
+  position:absolute;
+  background-size: 130%;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  content:attr(data-text);
+  background-color:rgba(105, 110, 91,0.97);
+  padding:2rem;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  font-size:1.5rem;
+  text-align:center;
+  font-weight:600;
+  opacity:0;
+  transition:0.5s;
+}
+.designImage:hover:after{
+  opacity:1;
+}
+/* IMAGES DESIGN */
+.lalka{
+  background-image: url('images/design/cat/lalka.jpg');
+}
+.cv{
+  background-image: url('images/design/cat/cv.jpg');
+}
+.coffee-lab{
+  background-image:url('images/design/cat/coffee-lab.jpg');
+}
+.game{
+  background-image:url('images/design/cat/game.jpg');
+}
+.zuk{
+  background-image:url('images/design/cat/zuk.jpg');
+  background-size:cover;
+}
+.ironing-man{
+  background-image: url('images/design/cat/ironing-man.jpg');
+}
+/* universal classes */
+.centered{
+  text-align:center;
+}
+.right{
+  text-align:right;
+}
+.left{
+  text-align:left;
+}
+.logo{
+  font-weight:600;
+  color:var(--color-green)
+}
+.logo:hover{
+  color:var(--color-lightgreen);
+}
+.categories{
+  font-size:1.2rem;
+  font-weight:300;
+  padding-right:2rem;
+}
+.categories:hover{
+  color:var(--color-lightgreen);
+}
+.icons{
+  padding-left:1rem;
+}
+.icons:hover{
+  color:var(--color-lightgreen);
+}
+/* lalka page */
+.project-section{
+  padding:5% 15%;
+}
+/* images lalka page */
+.lalka-banner{
+  background-image: url('images/design/lalka/lalka.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.lalka-project-image{
+  background-color: var(--color-lightgreen);
+  min-height:80vh;
+  margin-bottom:1rem;
+}
+.business-cards{
+  background-image: url('images/design/lalka/business-cards.png');
+  background-size: cover;
+  background-position: center;
+}
+.logo-mockup{
+  background-image: url('images/design/lalka/logo-mockup.jpg');
+  background-size: cover;
+  height:90vh;
+  background-position: center;
+}
+/* images */
+.banner-image{
+  background-color: var(--color-darkgrey);
+  min-height:100vh;
+}
+.main{
+  background-image:url('images/banner-main.jpg');
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 500px rgba(60,60,60, 0.4);
+}
+
+
+/* game page */
+
+/* game images */
+.game-banner{
+  background-image:url(images/design/game/banner.jpg);
+  background-size:cover;
+  background-position: center;
+}
+.gif{
+  background-image:url(images/design/game/game-gif.gif);
+  background-size:cover;
+  background-position: center;
+}
+
+.pionek{
+  background-image:url(images/design/game/pionek.jpg);
+  background-size:cover;
+  background-position: center;
+}
+.paper{
+  background-image:url(images/design/game/paper.jpg);
+  background-size:cover;
+  background-position: center;
+}
+.earth{
+  background-image:url(images/design/game/earth.jpg);
+  background-size:cover;
+  background-position: center;
+}
+.packing{
+  background-image:url(images/design/game/packing.jpg);
+  background-size:cover;
+  background-position: center;
+}
+/* ironing man images */
+.prototype{
+  background-image: url(images/design/ironing-man/prototype.png)
+}
+.logo-man{
+  background-image: url(images/design/ironing-man/logo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.ironing-man-banner{
+  background-image: url(images/design/ironing-man/mockup.jpg);
+  background-position: center;
+  background-size: cover;
+}
+/* coffee lab images */
+
+.white_bg{
+  background-image: url(images/design/coffee_lab/white_bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.yellow_bg{
+  background-image: url(images/design/coffee_lab/yellow_bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.set{
+  background-image: url(images/design/coffee_lab/set.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.coffee-banner{
+  background-image: url(images/design/coffee_lab/cup.jpg);
+  background-position: 50% 20%;
+  background-size: cover;
+}
+
+/* zuk images */
+.zuk-image{
+  background-image: url(images/design/zuk/zuk.jpg);
+  background-position: center;
+  background-size: contain;
+  height:80vh;
+  background-repeat: no-repeat;
+  background-color: rgb(240,240,240);
+}
+.logo-man{
+  background-image: url(images/design/ironing-man/logo.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.zuk-banner{
+  background-image: url(images/design/zuk/mockup.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.zuk-button{
+  display:inline-block;
+  color:var(--color-darkgrey);
+  font-size:1.2rem;
+  text-decoration: none;
+  padding:1.3rem;
+  border:1px solid var(--color-darkgrey);
+  border-radius: 40px;
+  margin-bottom:5rem;
+  text-align:right;
+}
+.zuk-button:hover{
+  color:white;
+  background-color: var(--color-lightgreen);
+}
+
+}
+/* for flex */
+.parent{
+  position:relative;
+}
+.child{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.child-down{
+  position:absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* SUBPAGE PHOTO */
+/* IMAGES PHOTOGRAPHY */
+.vietnam{
+  background-image: url(images/photography/cat/vietnam.jpg);
+}
+.analog{
+  background-image: url(images/photography/cat/analog.jpg);
+}
+.kuba{
+  background-image: url(images/photography/cat/kuba.jpg);
+}
+.plants{
+  background-image: url(images/photography/cat/plants.jpg);
+}
+.kiev{
+  background-image: url(images/photography/cat/kiev.jpg);
+}
+.plantpots{
+  background-image: url(images/photography/cat/plantpots1.jpg);
+  background-position: 50% 70%;
+}
+.hidden{
+  visibility:hidden;
+}
+
+/* image gallery vietnam*/
+.image-container{
+  display:flex;
+}
+.image-gallery-vietnam {
+  width:100%;
+  margin:auto;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap:0.5vh;
+  grid-template-areas:
+  'img1 img1 img3 img3 img3'
+  'img1 img1 img6 img6 img6'
+  'img5 img5 img5 img4 img4'
+  'img8 img8 img8 img4 img4'
+  'img2 img9 img9 img9 img9';
+}
+.image-gallery-vietnam a{
+  width:100%;
+  height:40vh;
+  background-color: var(--color-lightgreen);
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+.image-gallery-vietnam a i{
+  font-size:3rem;
+  position:relative;
+  z-index:100;
+  padding:1rem 1rem;
+  /* opacity:0; */
+  transition: opacity .5s;
+}
+
+/* vietnam */
+.vietnam-banner{
+  background-image: url(images/photography/cat/vietnam.jpg);
+  background-position: center;
+}
+.img1v{
+  grid-area:img1;
+  min-height:80.5vh;
+  background-image: url(images/photography/vietnam/img1.jpg);
+}
+.img2v{
+  grid-area: img2;
+  background-image: url('images/photography/vietnam/img2.jpg')
+}
+.img3v{
+  grid-area: img3;
+  background-image: url('images/photography/vietnam/img3.jpg')
+}
+.img4v{
+  grid-area: img4;
+  min-height:80.5vh;
+  background-image: url('images/photography/vietnam/img4.jpg')
+}
+.img5v{
+  grid-area: img5;
+  background-image: url('images/photography/vietnam/img5.jpg')
+}
+.img6v{
+  grid-area: img6;
+  background-image: url('images/photography/vietnam/img6.jpg')
+}
+.img7v{
+  grid-area: img7;
+  background-image: url('images/photography/vietnam/img7.jpg')
+}
+.img8v{
+  grid-area: img8;
+  background-image: url('images/photography/vietnam/img8.jpg')
+}
+.img9v{
+  grid-area: img9;
+  background-image: url('images/photography/vietnam/img9.jpg')
+}
+/* plants subpage */
+.plants-banner{
+  background-image: url('images/photography/cat/plants.jpg');
+  background-position: center;
+  background-size: cover;
+}
+/* image gallery plants */
+.image-gallery-plants {
+  width:100%;
+  margin:auto;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap:0.5vh;
+  grid-template-areas:
+  'img4 img4 img4 img4'
+  'img4 img4 img4 img4'
+  'img3 img3 img1 img1'
+  'img3 img3 img2 img2'
+}
+.image-gallery-plants a{
+  width:100%;
+  height:42vh;
+  background-color: var(--color-lightgreen);
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+/* plants IMAGES */
+.img1p{
+  grid-area:img1;
+  background-image: url('images/photography/plants/img1.jpg');
+}
+.img2p{
+  grid-area: img2;
+  background-image: url('images/photography/plants/img2.jpg')
+}
+.img3p{
+  grid-area: img3;
+  min-height:84.5vh;
+  background-image: url('images/photography/plants/img3.jpg')
+}
+.img4p{
+  grid-area: img4;
+  min-height:84.5vh;
+  background-image: url('images/photography/plants/img4.jpg')
+}
+
+/* music subpage */
+.music-banner{
+  background-image: url(images/photography/cat/kuba.jpg);
+  background-position: center;
+  background-size: cover;
+}
+/* music image gallery */
+.image-gallery-music {
+  width:100%;
+  margin:auto;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap:0.5vh;
+  grid-template-areas:
+  'img1 img1 img4 img4'
+  'img3 img3 img3 img3'
+  'img2 img2 img2 img2'
+}
+.image-gallery-music a{
+  width:100%;
+  height:84vh;
+  background-color: var(--color-lightgreen);
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+/* images music */
+.img1m{
+  grid-area:img1;
+  background-image: url('images/photography/music/img1.jpg');
+}
+.img2m{
+  grid-area: img2;
+  background-image: url('images/photography/music/img2.jpg');
+}
+.img3m{
+  grid-area: img3;
+  background-image: url('images/photography/music/img3.jpg');
+}
+.img4m{
+  grid-area: img4;
+  background-image: url('images/photography/music/img4.jpg');
+}
+
+/* analog */
+.analog-banner{
+  background-image: url(images/photography/cat/analog.jpg);
+  background-position: center;
+  background-size: cover;
+}
+/* analog image gallery */
+.image-gallery-analog {
+  width:100%;
+  margin:auto;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap:0.5vh;
+  grid-template-areas:
+  'img1 img1 img3 img3'
+  'img5 img5 img5 img5'
+  'img5 img5 img5 img5'
+  'img10 img10 img10 img8'
+  'img6 img6 img7 img7'
+  'img6 img6 img7 img7'
+  'img9 img9 img9 img9'
+  'img9 img9 img9 img9'
+  'img11 img11 img12 img13'
+}
+.image-gallery-analog a{
+  width:100%;
+  height:42vh;
+  background-color: var(--color-lightgreen);
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+/* images music */
+.img1a{
+  grid-area:img1;
+  background-image: url('images/photography/analog/img1.jpg');
+}
+.img2a{
+  grid-area: img2;
+  background-image: url('images/photography/analog/img2.jpg');
+}
+.img3a{
+  grid-area: img3;
+  background-image: url('images/photography/analog/img3.jpg');
+}
+.img4a{
+  grid-area: img4;
+  background-image: url('images/photography/analog/img4.jpg');
+}
+.img5a{
+  grid-area:img5;
+  min-height:84.5vh;
+  background-image: url('images/photography/analog/img5.jpg');
+}
+.img6a{
+  grid-area: img6;
+  min-height:84.5vh;
+  background-image: url('images/photography/analog/img6.jpg');
+}
+.img7a{
+  grid-area: img7;
+  min-height:84.5vh;
+  background-image: url('images/photography/analog/img7.jpg');
+}
+.img8a{
+  grid-area: img8;
+  background-image: url('images/photography/analog/img8.jpg');
+}
+.img9a{
+  grid-area:img9;
+  min-height:84.5vh;
+  background-image: url('images/photography/analog/img9.jpg');
+}
+.img10a{
+  grid-area: img10;
+  background-image: url('images/photography/analog/img10.jpg');
+}
+.img11a{
+  grid-area: img11;
+  background-image: url('images/photography/analog/img11.jpg');
+}
+.img12a{
+  grid-area: img12;
+  background-image: url('images/photography/analog/img12.jpg');
+}
+.img13a{
+  grid-area: img13;
+  background-image: url('images/photography/analog/img13.jpg');
+}
+.img14a{
+  grid-area: img14;
+  background-image: url('images/photography/analog/img14.jpg');
+}
+
+/* kiev */
+.kiev-banner{
+  background-image: url(images/photography/cat/kiev.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* analog image gallery */
+.image-gallery-kiev {
+  width:100%;
+  margin:auto;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap:0.5vh;
+  grid-template-areas:
+  'img5 img5 img5 img5 img5 img5 img3 img3 img3 img3 img3 img3 img3 img3'
+  'img5 img5 img5 img5 img5 img5 img2 img2 img2 img2 img2 img2 img2 img2'
+  'img4 img4 img4 img4 img4 img4 img4 img4 img4 img4 img4 img4 img4 img4'
+  'img4 img4 img4 img4 img4 img4 img4 img4 img4 img4 img4 img4 img4 img4'
+  'img6 img6 img6 img6 img6 img6 img6 img6 img9 img9 img9 img9 img9 img9'
+  'img7 img7 img7 img7 img7 img7 img7 img7 img9 img9 img9 img9 img9 img9'
+  'img1 img1 img1 img1 img1 img1 img1 img8 img8 img8 img8 img8 img8 img8'
+  'img1 img1 img1 img1 img1 img1 img1 img8 img8 img8 img8 img8 img8 img8'
+
+  ;
+
+
+}
+.image-gallery-kiev a{
+  width:100%;
+  height:42vh;
+  background-color: var(--color-lightgreen);
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+/* images kiev */
+.img1k{
+  grid-area:img1;
+  min-height:84.5vh;
+  background-image: url('images/photography/kiev/img1.jpg');
+}
+.img2k{
+  grid-area: img2;
+  background-image: url('images/photography/kiev/img2.jpg');
+}
+.img3k{
+  grid-area: img3;
+  background-image: url('images/photography/kiev/img3.jpg');
+}
+.img4k{
+  grid-area: img4;
+  min-height:84.5vh;
+  background-image: url('images/photography/kiev/img4.jpg');
+}
+.img5k{
+  grid-area:img5;
+  min-height:84.5vh;
+  background-image: url('images/photography/kiev/img5.jpg');
+}
+.img6k{
+  grid-area: img6;
+  background-image: url('images/photography/kiev/img6.jpg');
+}
+.img7k{
+  grid-area: img7;
+  background-image: url('images/photography/kiev/img7.jpg');
+}
+.img8k{
+  grid-area: img8;
+  min-height:84.5vh;
+  background-image: url('images/photography/kiev/img8.jpg');
+}
+.img9k{
+  grid-area:img9;
+  min-height:84.5vh;
+  background-image: url('images/photography/kiev/img9.jpg');
+}
+
+/* plantpots subpage */
+.plantpots-banner{
+  background-image: url(images/photography/plantpots/all_plants.jpg);
+  background-position: center;
+  background-size: cover;
+}
+/* plantpots image gallery */
+.plantpots-gallery{
+  background-color: var(--color-lightgreen);
+  min-height:84vh;
+  margin:0.5%;
+  background-size:cover;
+  background-position: center;
+}
+
+/* images music */
+.img1pp{
+  background-image: url('images/photography/plantpots/empty.jpg');
+}
+.img2pp{
+  background-image: url('images/photography/plantpots/gif1.gif');
+}
+.img3pp{
+  background-image: url('images/photography/plantpots/grey.jpg');
+}
+.img4pp{
+  background-image: url('images/photography/plantpots/all.jpg');
+}
+.img5pp{
+  background-image: url('images/photography/plantpots/gif2.gif');
+}
+.img6pp{
+  background-image: url('images/photography/plantpots/all_plants.jpg');
+}
+
+.harehule-logo{
+  background-color: white;
+  background-image: url('images/photography/plantpots/logo.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height:20vh;
+  margin:0.25%;
+}
+
+/* CONTACT SUBPAGE */
+.contact-image{
+  position:fixed;
+  background-color: var(--color-lightgreen);
+  height:100vh;
+  width:50%;
+  margin-left:50%;
+  align:right;
+  background-image: url(images/contact/contact.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.contact-section{
+  padding:5%;
+  text-align:center;
+  background-color: var(--color-lightgreen);
+  /* height:100vh; */
+}
+.contact-text{
+  background-color: white;
+  border-radius:8px;
+  margin:10px;
+  padding:10%;
+}
+.white{
+  color:white;
+}
+
+.joke{
+  font-size:0.8rem;
+  padding-bottom:15px;
+}
+.email{
+  padding-bottom:10px;
+}
+.padded{
+  padding-top:20%;
+}
+.icon-larger{
+  font-size:4rem;
+  padding:0;
+  margin:0;
+}
+.h3_smaller{
+  font-size:3rem;
+}
+
+/* for small screens */
+/* header */
+@media all and (max-width:600px){
+  .page-header{
+    flex-wrap:wrap;
+  }
+  .page-header > div{
+    flex: 1 1 50%;
+  }
+  .page-header ul li{
+    padding-left:0;
+    padding-right:20px
+  }
+  .categories{
+    padding:0;
+  }
+  .logo{
+    text-align:left;
+  }
+  .end{
+    order:1;
+  }
+  .designImage{
+    min-height: 200px;
+    min-width:300px;
+  }
+  h1{
+    font-size:1rem;
+  }
+  .lalka-project-image{
+    width:100%;
+    min-height:45vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+  .project-section{
+    padding:0;
+  }
+  p{
+    padding:3%;
+    font-size:1.1rem;
+  }
+}
+/* this changes grid on small screens */
+@media screen and (max-width:900px){
+  .image-gallery{
+    grid-template-areas:
+    'img1 img1 img1 img1 img1'
+    'img2 img2 img2 img2 img2'
+    'img3 img3 img3 img3 img3'
+    'img4 img4 img4 img4 img4'
+    'img5 img5 img5 img5 img5'
+    'img6 img6 img6 img6 img6'
+    'img7 img7 img7 img7 img7'
+    'img8 img8 img8 img8 img8'
+    'img9 img9 img9 img9 img9'
+  }
+}
